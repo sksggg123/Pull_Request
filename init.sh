@@ -10,7 +10,7 @@ echo '\n\n'
 
 echo 'input local url'
 read -p " local owner > " localOwner
-reap -p " local repository > " localRepository
+read -p " local repository > " localRepository
 
 echo '\n\n'
 
@@ -18,6 +18,17 @@ echo 'input remote alias'
 read -p ' > ' nickName
 
 
+# step 1 -> clone local repository
+echo 'Clone Local ${localRepository}'
+git clone https://github.com/${localOwner}/${localRepository}.git
 
-git clone https://github.com/${localOwner}/${localRepository}
+cd ${localRepository}
+
+git remote -v
+
+# step 2 -> remote add..
+echo 'Remote Add -> ${nickName}'
+git remote add ${nickName} https://github.com/${remoteOwner}/${remoteRepository}.git
+
+git remote -v
 
