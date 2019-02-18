@@ -1,6 +1,6 @@
 ## Pull Request 하기 위한 로컬저장소 셋팅
 
-https://img.shields.io/github/license/sksggg123/Pull_Request.svg?style=flat
+[![License](https://img.shields.io/github/license/sksggg123/Pull_Request.svg?style=flat)](https://github.com/sksggg123/Pull_Request/blob/master/LICENSE)
 
 step1 > PR 대상 Repository Fork 하기
 
