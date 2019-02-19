@@ -1,7 +1,5 @@
 #!bin/bash
 
-#https://github.com/sksggg123/Pull_Request.git
-
 echo 'input remote info'
 read -p " remote owner > " remoteOwner
 read -p " renite repository > " remoteRepository 
@@ -19,16 +17,19 @@ read -p ' > ' nickName
 
 
 # step 1 -> clone local repository
-echo 'Clone Local ${localRepository}'
+echo 'Clone Local ${localRepository}\n'
+echo '\n=======================================================\n'
 git clone https://github.com/${localOwner}/${localRepository}.git
-
+echo '\n=======================================================\n'
 cd ${localRepository}
 
-git remote -v
-
 # step 2 -> remote add..
-echo 'Remote Add -> ${nickName}'
+echo 'Remote Add -> ${nickName}\n'
+echo '\n=======================================================\n'
 git remote add ${nickName} https://github.com/${remoteOwner}/${remoteRepository}.git
+echo '\n=======================================================\n'
 
+echo '\n\nRemote stat\n'
+echo '\n=======================================================\n'
 git remote -v
-
+echo '\n=======================================================\n'
