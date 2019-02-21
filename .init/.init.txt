@@ -1,0 +1,6 @@
+
+remoteOwner	integerous
+remoteRepository	goQuality-dev-contents
+localOwner	sksggg123
+localRepository	goQuality-dev-contents
+alias	goQuality
